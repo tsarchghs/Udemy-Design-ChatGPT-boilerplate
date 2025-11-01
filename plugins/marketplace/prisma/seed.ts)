@@ -1,0 +1,41 @@
+import { PrismaClient } from '@prisma/client'
+const prisma = new PrismaClient()
+
+async function main() {
+  await prisma.category.upsert({
+    where: { name: 'Australia' },
+    update: {},
+    create: { name: 'Australia' },
+  })
+
+  await prisma.photo.createMany({
+    data: [
+      {
+        title: 'Sydney Harbour',
+        description: 'Beautiful skyline view',
+        imageUrl: '/gallery/sydney-harbour.jpg',
+        location: 'Sydney, Australia',
+      },
+      {
+        title: 'Brisbane River',
+        imageUrl: '/gallery/brisbane-river.jpg',
+        location: 'Brisbane, Australia',
+      },
+      {
+        title: 'Melbourne Streets',
+        imageUrl: '/gallery/melbourne-street.jpg',
+        location: 'Melbourne, Australia',
+      },
+      {
+        title: 'Adelaide Hills',
+        imageUrl: '/gallery/adelaide-hills.jpg',
+        location: 'Adelaide, Australia',
+      },
+    ],
+  })
+}
+
+main()
+  .then(() => console.log('✅ Seeded gallery photos'))
+  .catch(console.error)
+  .finally(() => prisma.$disconnect())
