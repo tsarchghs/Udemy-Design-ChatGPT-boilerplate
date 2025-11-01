@@ -32,3 +32,4 @@ Visit **/products** to see the marketplace plugin (front-end provided by the plu
 - Plugin pages are added with `pages:extend` (no rebuilds or file copies).
 - API is a separate process so plugins can deploy independently if desired.
 # Udemy-Design-ChatGPT-boilerplate
+# Udemy-Design-ChatGPT-boilerplate
