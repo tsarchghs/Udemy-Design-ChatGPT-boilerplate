@@ -1,0 +1,13 @@
+{
+  "name": "marketplace",
+  "routes": [
+    {
+      "path": "/products",
+      "file": "nuxt/pages/products/index.vue"
+    },
+    {
+      "path": "/products/:id",
+      "file": "nuxt/pages/products/[id].vue"
+    }
+  ]
+}

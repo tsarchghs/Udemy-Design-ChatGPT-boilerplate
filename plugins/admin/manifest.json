@@ -1,0 +1,6 @@
+{
+  "name": "admin",
+  "routes": [
+    { "path": "/admin", "file": "nuxt/pages/dashboard.vue" }
+  ]
+}

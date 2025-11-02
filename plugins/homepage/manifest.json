@@ -1,0 +1,7 @@
+{
+  "name": "headerbar",
+  "routes": [
+    { "path": "/", "file": "nuxt/pages/demo-header.vue" },
+    { "path": "/search", "file": "nuxt/pages/search.vue"  }
+  ]
+}

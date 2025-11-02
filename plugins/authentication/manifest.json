@@ -1,0 +1,7 @@
+{
+  "name": "admin",
+  "routes": [
+    { "path": "/login", "file": "nuxt/pages/login.vue" },
+    { "path": "/register", "file": "nuxt/pages/register.vue" }
+  ]
+}
