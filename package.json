@@ -15,10 +15,16 @@
     "build": "pnpm -r build"
   },
   "devDependencies": {
-    "concurrently": "^9.0.0"
+    "@types/node": "^22.7.5",
+    "bcryptjs": "^3.0.2",
+    "concurrently": "^9.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.18.0"
   },
   "dependencies": {
+    "@prisma/client": "^6.18.0",
     "express": "^5.1.0",
+    "leaflet": "^1.9.4",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
   }
